@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Conference Registration Form</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--loading my stylesheet last to override some o the bootstrap styles-->
+    <link rel="stylesheet" href="confFormStyle.css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="jumbotron">
+                <img src="images/logo.png" />
+                <br />
+                <h2>
+                    Ximedica Conference Registration:
+                </h2>
+                <span id="subtitle">Medical Device Engineering</span> &nbsp;&nbsp;&nbsp;&nbsp; <b>May 30, 2018 - Toronto, Ontario, CA @Harbourfront Centre</b>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="form" class="col-md-6">
+                <form name="registration">
+                    <h3>Please Complete Form and Click Register</h3>
+                    <br />
+                    <br />
+
+                    <p>
+                        <label for="username" class="uname" data-icon="u">Your username</label><br />
+                        <input id="username" name="username" required="required" type="text" placeholder="bigJimboDuder" maxlength="70">
+                    </p>
+                    <p>
+                        <label for="email" class="email" data-icon="e"> Your email</label><br />
+                        <input id="email" name="email" required="required" type="email" placeholder="jimmy@duder.com">
+                    </p>
+                    <p>
+                        <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label><br />
+                        <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO">
+                    </p>
+                    <p>
+                        <label for="shirtsize" class="shirt-size" data-icon="s">Your shirt size</label><br />
+                        <select class="shirt-size" required="required">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="dob" class="dob" data-icon="d">Your date of birth</label><br />
+                        <input id="dob" name="dob" required="required" type="date" placeholder="10/21/1982">
+                    </p>
+                    <p>
+                        <strong>Do you want to receive emails from conference sponsors?</strong><br />
+                        <label><input type="radio" name="marketing" value="no" required>No thanks</label>
+                        <label><input type="radio" name="marketing" value="yes">Yes!</label>
+                    </p>
+                    <p>
+                        <strong>Check the sessions you wish to attend:</strong><br />
+                        <input type="checkbox" name="morning" value="morning"> morning session<br>
+                        <input type="checkbox" name="afternoon" value="afternoon"> afternoon sessions
+                    </p>
+                    <p>
+                        <strong>Additional comments:</strong><br />
+                        <textarea name="message" rows="10">enter additional comments here</textarea>
+                    </p>
+                    <br />
+                    <br />
+
+                    <p class="signin button">
+                        <input type="submit" value="Register" class="btn btn-success large">
+                    </p>
+                </form>
+            </div>
+            <div id="pic" class="col-md-6">
+                <img src="images/center.jpg" />
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
